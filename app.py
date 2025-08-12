@@ -8,7 +8,7 @@ import pandas as pd
 # =========================
 # 📂 Load Model & Scaler
 # =========================
-with open("model.pkl", "rb") as f:
+with open("Model.pkl", "rb") as f:
     model = pickle.load(f)
 
 with open("scal.pkl", "rb") as f:
@@ -178,3 +178,4 @@ if st.button("🔍 Predict Cluster"):
     st.success(f"Predicted Cluster: {cluster_num}")
     st.info(f"📌 Label: {cluster_labels.get(cluster_num, 'Unknown cluster')}")
 #streamlit run "C:\Users\prane\python_codes\New folder (2)\app.py"
+
